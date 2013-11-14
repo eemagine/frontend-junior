@@ -1,7 +1,7 @@
 JUNIOR FRONT-END DEVELOPER
 ==========================
 
-[eemagine](http://eemagine.me/) ima potrebu za part-time junior fontend developerom koji želi da unapredi svoja znanja.
+[eemagine](http://eemagine.me/) ima potrebu za part-time junior frontend developerom koji želi da unapredi svoja znanja.
 
 Nudimo
 ------
