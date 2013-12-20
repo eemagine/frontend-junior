@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "TradeGothicLTStd-Extended";
+  src: url(../fonts/TradeGothicLTStd-Extended.otf); }
+
+@font-face {
+  font-family: "TradeGothicLTStd-ExtendedBold";
+  src: url(../fonts/tradegothicltstd-boldext-webfont.ttf); }
+
+.index .header {
+  display: table; }
+  .index .header .col-md-6 {
+    display: table; }
+  .index .header .navbar-brand {
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding: 0px; }
+  .index .header h1 {
+    font-family: "TradeGothicLTStd-ExtendedBold";
+    font-weight: bold;
+    font-size: 62px;
+    color: #000;
+    margin-top: 0;
+    padding-top: 5px;
+    line-height: 1; }
+  .index .header ul.numbers {
+    margin-top: 30px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid silver;
+    line-height: 1.2; }
+  .index .header span.number,
+  .index .header ul li {
+    font-family: "TradeGothicLTStd-ExtendedBold";
+    font-size: 60px;
+    color: #fbb03b;
+    text-align: right; }
+  .index .header .activity {
+    font-family: "TradeGothicLTStd-Extended";
+    font-size: 18px;
+    color: #000;
+    float: right;
+    text-align: right;
+    width: 110px;
+    margin-top: 8px; }
+  .index .header .middle {
+    padding: 0px; }
+    .index .header .middle .left {
+      width: 90px; }
+    .index .header .middle .numbers .right {
+      float: right; }
+    .index .header .middle .captions .left {
+      float: left; }
+  .index .header .designers {
+    margin-top: 30px;
+    border-top: 1px solid black;
+    width: 100%;
+    border-bottom: 2px solid silver;
+    line-height: 1.2; }
+  .index .header .designers span {
+    float: right; }
+  .index .header .border {
+    border-bottom: 2px solid #808080; }
+  @media (max-width: 991px) {
+    .index .header .col-md-3 {
+      width: 50%; }
+    .index .header ul.numbers {
+      margin-top: 0; }
+    .index .header .middle {
+      padding-left: 10px; }
+    .index .header .end {
+      float: right;
+      margin-top: -163px; } }
+  @media (max-width: 460px) {
+    .index .header h1 {
+      font-size: 48px; }
+    .index .header span.number,
+    .index .header ul li {
+      font-size: 46px; }
+    .index .header .end {
+      margin-top: -136px; }
+    .index .header .activity {
+      font-size: 14px;
+      width: 88px; }
+    .index .header .captions .left {
+      width: 80px; } }

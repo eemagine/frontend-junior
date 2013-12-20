@@ -1,0 +1,145 @@
+@font-face {
+      font-family: "TradeGothicLTStd-Extended";
+      src: url(../fonts/TradeGothicLTStd-Extended.otf);
+}
+
+@font-face {
+      font-family: "TradeGothicLTStd-ExtendedBold";
+      src: url(../fonts/tradegothicltstd-boldext-webfont.ttf);
+}
+
+$primary-font-ext: "TradeGothicLTStd-Extended";
+$primary-font-ext-bold: "TradeGothicLTStd-ExtendedBold";
+$color-orange: #fbb03b;
+$border-black: 1px solid #000;
+$border-gray: 2px solid #c0c0c0;
+
+@mixin border-top {
+	margin-top: 30px;
+	border-top: $border-black;
+}
+
+.index .header {
+
+	display: table;
+
+	.col-md-6 {
+		display: table;
+	}
+
+ 	.navbar-brand {
+		@include border-top;
+		padding: 0px; 
+	}	
+
+	h1 {
+		font-family: $primary-font-ext-bold;
+		font-weight: bold;
+		font-size: 62px;
+		color: #000;
+		margin-top: 0;
+		padding-top: 5px;
+		line-height: 1;
+	}
+
+	ul.numbers {
+		@include border-top;
+		border-bottom: $border-gray;
+		line-height: 1.2;
+	}
+
+ 	span.number,
+	ul li {
+		font-family: $primary-font-ext-bold;
+		font-size: 60px;
+		color: $color-orange;
+		text-align: right;
+	}
+
+	.activity {
+		font-family: $primary-font-ext;
+		font-size: 18px;
+		color: #000;
+		float: right;
+		text-align: right;
+		width: 110px;
+		margin-top: 8px;
+	} 
+
+	.middle {
+		padding: 0px;
+
+		.left {
+			width: 90px;
+		}
+
+		.numbers .right {
+			float: right;
+		}
+
+	 	.captions .left {
+			float: left;
+		}
+	}
+	
+	 .designers {
+		@include border-top;
+		width: 100%;
+		border-bottom: $border-gray;
+		line-height: 1.2;
+	}
+
+	.designers span {
+		float: right;
+	}
+
+	.border {
+		border-bottom: 2px solid #808080;
+	}
+
+	@media (max-width: 991px) {
+		.col-md-3 {
+			width: 50%;
+		}
+
+		ul.numbers {
+			margin-top: 0;
+		}
+
+		.middle {
+			padding-left: 10px;
+		}
+
+		.end {
+			float: right;
+			margin-top: -163px;
+		}
+	}
+
+	@media (max-width: 460px) {
+		h1 {
+			font-size: 48px;
+		}
+
+		span.number,
+		ul li {
+			font-size: 46px;
+		}
+
+		.end {
+			margin-top: -136px;
+		}
+
+		.activity {
+			font-size: 14px;
+			width: 88px;
+		}
+
+		.captions .left {
+			width: 80px;
+		}
+	}
+}
+
+
+
