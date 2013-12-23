@@ -6,6 +6,14 @@
   font-family: "TradeGothicLTStd-ExtendedBold";
   src: url(../fonts/tradegothicltstd-boldext-webfont.ttf); }
 
+@font-face {
+  font-family: "TradeGothicLTStd-Bold";
+  src: url(../fonts/tradegothicltstd-bold-webfont.ttf); }
+
+.nav > li > a:hover {
+  background-color: transparent;
+  opacity: 0.8; }
+
 .index .header {
   display: table; }
   .index .header .col-md-6 {
@@ -101,6 +109,38 @@
     @media (max-width: 490px) {
       .index .social-section a {
         padding-top: 10px; } }
-  .index .social-section a:hover {
-    background-color: transparent;
-    opacity: 0.8; }
+
+.index .navigation {
+  margin-top: 12px; }
+  .index .navigation li {
+    margin-right: 8px; }
+  .index .navigation li a {
+    font-family: "TradeGothicLTStd-Bold";
+    font-size: 24px;
+    color: #fff;
+    padding: 4px 0; }
+  .index .navigation li.participate {
+    background-color: #666; }
+  .index .navigation li.about {
+    background-color: #b3b3b3;
+    padding: 0px;
+    text-align: center; }
+  .index .navigation li.empty {
+    background-color: #b3b3b3;
+    width: 20.7%; }
+  .index .navigation li.shop {
+    background-color: #999; }
+  .index .navigation li.login {
+    background-color: #4d4d4d;
+    margin-right: 0;
+    text-align: center; }
+  @media (max-width: 991px) {
+    .index .navigation .nav-pills > li {
+      float: none;
+      margin: 0 0 6px 0; }
+    .index .navigation li.about,
+    .index .navigation li.login {
+      text-align: left;
+      padding: 0 10px; }
+    .index .navigation li.empty {
+      width: auto; } }

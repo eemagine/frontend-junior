@@ -8,8 +8,14 @@
       src: url(../fonts/tradegothicltstd-boldext-webfont.ttf);
 }
 
+@font-face {
+      font-family: "TradeGothicLTStd-Bold";
+      src: url(../fonts/tradegothicltstd-bold-webfont.ttf);
+}
+
 $primary-font-ext: "TradeGothicLTStd-Extended";
 $primary-font-ext-bold: "TradeGothicLTStd-ExtendedBold";
+$primary-font-bold: "TradeGothicLTStd-Bold";
 $color-orange: #fbb03b;
 $border-black: 1px solid #000;
 $border-gray: 2px solid #c0c0c0;
@@ -17,6 +23,11 @@ $border-gray: 2px solid #c0c0c0;
 @mixin border-top {
 	margin-top: 30px;
 	border-top: $border-black;
+}
+
+.nav > li > a:hover {
+	background-color: transparent;
+	opacity: 0.8;
 }
 
 .index .header {
@@ -166,10 +177,63 @@ $border-gray: 2px solid #c0c0c0;
 			padding-top: 10px;
 		}
 	}
+}
 
-	a:hover {
-		background-color: transparent;
-		opacity: 0.8;
+.index .navigation {
+
+	margin-top: 12px;
+
+	li {
+		margin-right: 8px;
+	}
+
+	li a {
+		font-family: $primary-font-bold;
+		font-size: 24px;
+		color: #fff;
+		padding: 4px 0;
+	}
+
+	li.participate {
+		background-color: #666;
+	}
+
+	li.about {
+		background-color: #b3b3b3;
+		padding: 0px;
+		text-align: center;
+	}
+
+	li.empty {
+		background-color: #b3b3b3;
+		width: 20.7%;
+	}
+
+	li.shop {
+		background-color: #999;
+	}
+
+	li.login {
+		background-color: #4d4d4d;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	@media(max-width: 991px) {
+		.nav-pills > li {
+			float: none;
+			margin: 0 0 6px 0;
+		}
+
+		li.about,
+		li.login {
+			text-align: left;
+			padding: 0 10px;
+		}
+
+		li.empty {
+			width: auto;
+		}
 	}
 }
 
