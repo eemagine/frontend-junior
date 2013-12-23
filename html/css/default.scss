@@ -94,7 +94,7 @@ $border-gray: 2px solid #c0c0c0;
 	}
 
 	.border {
-		border-bottom: 2px solid #808080;
+		border-bottom: 3px solid #555;
 	}
 
 	@media (max-width: 991px) {
@@ -138,6 +138,38 @@ $border-gray: 2px solid #c0c0c0;
 		.captions .left {
 			width: 80px;
 		}
+	}
+}
+
+.index .social-section {
+	.border {
+		border-top: 4px solid #000;
+		border-bottom: $border-black;
+		padding: 12px 2px 5px 18px;	
+		display: table;
+		width: 100%;
+	}
+	
+	margin-top: 4px; 
+
+	span {
+		font-family: Georgia, Serif;
+		font-size: 19px;
+		font-style: italic;
+	}
+
+	a {
+		padding: 0px 0 0 10px;
+		margin-top: -5px;
+
+		@media (max-width: 490px) {
+			padding-top: 10px;
+		}
+	}
+
+	a:hover {
+		background-color: transparent;
+		opacity: 0.8;
 	}
 }
 

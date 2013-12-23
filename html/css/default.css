@@ -58,7 +58,7 @@
   .index .header .designers span {
     float: right; }
   .index .header .border {
-    border-bottom: 2px solid #808080; }
+    border-bottom: 3px solid #555; }
   @media (max-width: 991px) {
     .index .header .col-md-3 {
       width: 50%; }
@@ -82,3 +82,25 @@
       width: 88px; }
     .index .header .captions .left {
       width: 80px; } }
+
+.index .social-section {
+  margin-top: 4px; }
+  .index .social-section .border {
+    border-top: 4px solid #000;
+    border-bottom: 1px solid black;
+    padding: 12px 2px 5px 18px;
+    display: table;
+    width: 100%; }
+  .index .social-section span {
+    font-family: Georgia, Serif;
+    font-size: 19px;
+    font-style: italic; }
+  .index .social-section a {
+    padding: 0px 0 0 10px;
+    margin-top: -5px; }
+    @media (max-width: 490px) {
+      .index .social-section a {
+        padding-top: 10px; } }
+  .index .social-section a:hover {
+    background-color: transparent;
+    opacity: 0.8; }
