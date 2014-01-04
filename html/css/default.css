@@ -129,7 +129,7 @@
     background-color: #b3b3b3;
     width: 20.7%; }
   .index .navigation li.shop {
-    background-color: #999; }
+    background-color: #999999; }
   .index .navigation li.login {
     background-color: #4d4d4d;
     margin-right: 0;
@@ -144,3 +144,137 @@
       padding: 0 10px; }
     .index .navigation li.empty {
       width: auto; } }
+
+.index .expression h2 {
+  font-family: "TradeGothicLTStd-Bold";
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  border-bottom: 2px solid silver; }
+.index .expression .selection {
+  background-color: #f2f2f2;
+  padding: 15px 10px 15px 5px; }
+  .index .expression .selection .images img.img-right {
+    margin-left: 12px; }
+  .index .expression .selection .images img {
+    position: relative;
+    top: 0;
+    left: 0; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .index .expression .selection .images img {
+        width: 212px; } }
+    @media (max-width: 556px) {
+      .index .expression .selection .images img {
+        width: 45%; } }
+  .index .expression .selection .images img.arrow {
+    position: absolute;
+    top: 130px;
+    left: 164px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .index .expression .selection .images img.arrow {
+        width: 170px;
+        top: 116px;
+        left: 146px; } }
+    @media (max-width: 556px) {
+      .index .expression .selection .images img.arrow {
+        width: 35%;
+        top: 40%;
+        left: 29%; } }
+  @media (max-width: 991px) {
+    .index .expression .selection .details {
+      margin-top: 20px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .index .expression .selection .details .col-md-3 {
+      padding: 0 9px; } }
+  @media (max-width: 991px) {
+    .index .expression .selection .details .col-md-3 br {
+      display: none; } }
+  @media (max-width: 664px) {
+    .index .expression .selection .details .col-md-3 {
+      display: block; } }
+  @media (max-width: 460px) {
+    .index .expression .selection .details .col-md-3 {
+      width: 100%; } }
+  .index .expression .selection .details span {
+    font-family: "TradeGothicLTStd-Bold";
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 10px;
+    width: 50%;
+    line-height: 1.30;
+    margin-left: 5px; }
+  .index .expression .selection .details img.logo {
+    margin-left: 40px; }
+    @media (max-width: 1199px) {
+      .index .expression .selection .details img.logo {
+        margin-left: 20px; } }
+    @media (max-width: 664px) {
+      .index .expression .selection .details img.logo {
+        float: right;
+        margin-top: -70px; } }
+    @media (max-width: 460px) {
+      .index .expression .selection .details img.logo {
+        float: none;
+        margin: 0; } }
+  .index .expression .selection .details .separator {
+    border-top: 1px solid black;
+    margin: 15px 0 10px; }
+  .index .expression .selection .details .datas {
+    background-color: #999999;
+    padding: 12px 0 12px 17px;
+    position: relative; }
+    @media (max-width: 460px) {
+      .index .expression .selection .details .datas {
+        padding-bottom: 60px;
+        padding-right: 10px; } }
+    .index .expression .selection .details .datas span {
+      font-family: "TradeGothicLTStd-Bold";
+      font-size: 17px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-left: 0; }
+    .index .expression .selection .details .datas span.block {
+      display: block; }
+      @media (max-width: 460px) {
+        .index .expression .selection .details .datas span.block {
+          width: 100%; } }
+    .index .expression .selection .details .datas strong {
+      font-family: "TradeGothicLTStd-Bold";
+      font-size: 17px;
+      text-transform: uppercase;
+      color: #000;
+      margin-right: 5px;
+      font-weight: normal; }
+    .index .expression .selection .details .datas .ribbon {
+      background-image: url(../img/ribbon.png);
+      width: 230px;
+      height: 63px;
+      position: absolute;
+      top: 38px;
+      right: -30px; }
+      @media (max-width: 460px) {
+        .index .expression .selection .details .datas .ribbon {
+          top: 157px; } }
+      .index .expression .selection .details .datas .ribbon p {
+        font-family: "TradeGothicLTStd-Bold";
+        color: #4d4d4d;
+        font-size: 14px;
+        padding: 8px 15px 0 15px; }
+  .index .expression .selection .details p.answer {
+    font-family: "TradeGothicLTStd-Bold";
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 10px;
+    font-size: 25px;
+    background-color: #fbb03b;
+    text-align: center;
+    margin: 20px 0 0;
+    padding: 25px 0 23px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .index .expression .selection .details p.answer {
+        margin-top: 10px;
+        padding: 10px 0 7px; } }
+    @media (max-width: 460px) {
+      .index .expression .selection .details p.answer {
+        font-size: 20px; } }

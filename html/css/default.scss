@@ -19,10 +19,25 @@ $primary-font-bold: "TradeGothicLTStd-Bold";
 $color-orange: #fbb03b;
 $border-black: 1px solid #000;
 $border-gray: 2px solid #c0c0c0;
+$background-light: #f2f2f2;
+$background-gray: #999;
 
 @mixin border-top {
 	margin-top: 30px;
 	border-top: $border-black;
+}
+
+@mixin h2 {
+	font-family: $primary-font-bold;
+	font-size: 24px;
+	color: #000;
+	padding-bottom: 10px;
+}
+
+@mixin span {
+	font-family: $primary-font-bold;
+	font-size: 17px;
+	text-transform: uppercase;
 }
 
 .nav > li > a:hover {
@@ -210,7 +225,7 @@ $border-gray: 2px solid #c0c0c0;
 	}
 
 	li.shop {
-		background-color: #999;
+		background-color: $background-gray;
 	}
 
 	li.login {
@@ -233,6 +248,183 @@ $border-gray: 2px solid #c0c0c0;
 
 		li.empty {
 			width: auto;
+		}
+	}
+}
+
+.index .expression {
+	h2 {
+		@include h2;
+		margin-top: 30px;
+		border-bottom: $border-gray;
+	}
+
+	.selection {
+		background-color: $background-light;
+		padding: 15px 10px 15px 5px;
+
+		.images {
+			img.img-right {
+			margin-left: 12px;
+			}
+
+			img {
+				position: relative;
+				top: 0;
+				left: 0;
+
+				@media (min-width: 992px) and (max-width: 1199px) {
+					width: 212px;
+				}
+
+				@media(max-width: 556px) {
+					width: 45%;
+				}
+			}
+
+			img.arrow {
+				position: absolute;
+				top: 130px;
+				left: 164px;
+
+				@media (min-width: 992px) and (max-width: 1199px) {
+					width: 170px;
+					top: 116px;
+					left: 146px;
+				}
+				
+				@media(max-width: 556px) {
+					width: 35%;
+					top: 40%;
+					left: 29%;
+				}
+			}
+		}
+
+		.details {
+			@media (max-width: 991px) {
+				margin-top: 20px;
+			}
+
+			.col-md-3 {
+				@media (min-width: 992px) and (max-width: 1199px) {
+					padding: 0 9px;
+				}
+				
+				@media (max-width: 991px) {
+					br {
+						display: none;
+					}
+				}
+
+				@media(max-width: 664px) {
+					display: block;
+				}
+
+				@media(max-width: 460px) {
+					width: 100%;
+				}
+			}
+
+			span {
+				@include h2;
+				width: 50%;
+				line-height: 1.30;
+				margin-left: 5px;
+			}
+
+			img.logo {
+				margin-left: 40px;
+
+				@media (max-width: 1199px) {
+					margin-left: 20px;
+				}
+
+				@media(max-width: 664px) {
+					float: right;
+					margin-top: -70px;
+				}
+
+				@media(max-width: 460px) {
+					float: none;
+					margin: 0;
+				}
+			}
+
+			.separator {
+				border-top: $border-black;
+				margin: 15px 0 10px;
+			}
+
+			.datas {
+				background-color: $background-gray;
+				padding: 12px 0 12px 17px;
+				position: relative;
+
+				@media(max-width: 460px) {
+					padding-bottom: 60px;
+					padding-right: 10px;
+				}
+
+				span {
+					@include span;
+					color: #fff;
+					margin-left: 0;
+				}
+
+				span.block {
+					display: block;
+
+					@media(max-width: 460px) {
+						width: 100%;
+					}
+				}
+
+				strong {
+					@include span;
+					color: #000;
+					margin-right: 5px;
+					font-weight: normal;
+				}
+
+				.ribbon {
+					background-image: url(../img/ribbon.png);
+					width: 230px;
+					height: 63px;
+					position: absolute;
+					top: 38px;
+					right: -30px;
+
+					@media(max-width: 460px) {
+						top: 157px;
+					}
+
+					p {
+						font-family: $primary-font-bold;
+						color: #4d4d4d;
+						font-size: 14px;
+						padding: 8px 15px 0 15px;
+					}
+				}
+			}
+
+			p.answer {
+				@include h2;
+				font-size: 25px;
+				background-color: #fbb03b;
+				text-align: center;
+				margin: 20px 0 0;
+				padding: 25px 0 23px;
+
+				@media (min-width: 992px) and (max-width: 1199px) {
+					margin-top: 10px;
+					padding: 10px 0 7px;
+				}
+
+				@media(max-width: 460px) {
+					font-size: 20px;
+				}
+			}
 		}
 	}
 }
