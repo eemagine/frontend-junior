@@ -196,7 +196,9 @@
       display: block; } }
   @media (max-width: 460px) {
     .index .expression .selection .details .col-md-3 {
-      width: 100%; } }
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0; } }
   .index .expression .selection .details span {
     font-family: "TradeGothicLTStd-Bold";
     font-size: 24px;
