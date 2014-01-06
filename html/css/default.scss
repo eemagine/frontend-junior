@@ -262,6 +262,7 @@ $background-gray: #999;
 	.selection {
 		background-color: $background-light;
 		padding: 15px 10px 15px 5px;
+		margin-bottom: 23px;
 
 		.images {
 			img.img-right {
@@ -317,7 +318,7 @@ $background-gray: #999;
 					}
 				}
 
-				@media(max-width: 664px) {
+				@media(max-width: 667px) {
 					display: block;
 				}
 
@@ -331,6 +332,19 @@ $background-gray: #999;
 				width: 50%;
 				line-height: 1.30;
 				margin-left: 5px;
+				font-weight: 300;
+			}
+
+			span.wide {
+				width: auto;
+
+				@media(max-width: 667px) {
+					width: 50%;
+				}
+
+				@media(max-width: 460px) {
+					width: 100%;
+				}
 			}
 
 			img.logo {
@@ -340,7 +354,7 @@ $background-gray: #999;
 					margin-left: 20px;
 				}
 
-				@media(max-width: 664px) {
+				@media(max-width: 667px) {
 					float: right;
 					margin-top: -70px;
 				}
@@ -348,6 +362,14 @@ $background-gray: #999;
 				@media(max-width: 460px) {
 					float: none;
 					margin: 0;
+				}
+			}
+
+			img.wide {
+				margin-left: 22px;
+
+				@media (max-width: 1199px) {
+					margin-left: 2px;
 				}
 			}
 
