@@ -367,9 +367,16 @@ $background-gray: #999;
 				}
 			}
 
-			img.wide {
+			img.middle {
 				margin-left: 22px;
+				width: 160px;
 
+				@media (max-width: 1199px) {
+					margin-left: 2px;
+				}
+			}
+
+			img.wide {
 				@media (max-width: 1199px) {
 					margin-left: 2px;
 				}

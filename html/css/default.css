@@ -229,11 +229,15 @@
       .index .expression .selection .details img.logo {
         float: none;
         margin: 0; } }
-  .index .expression .selection .details img.wide {
-    margin-left: 22px; }
+  .index .expression .selection .details img.middle {
+    margin-left: 22px;
+    width: 160px; }
     @media (max-width: 1199px) {
-      .index .expression .selection .details img.wide {
+      .index .expression .selection .details img.middle {
         margin-left: 2px; } }
+  @media (max-width: 1199px) {
+    .index .expression .selection .details img.wide {
+      margin-left: 2px; } }
   .index .expression .selection .details .separator {
     border-top: 1px solid black;
     margin: 15px 0 10px; }
