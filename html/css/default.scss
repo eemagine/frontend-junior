@@ -453,5 +453,82 @@ $background-gray: #999;
 	}
 }
 
+.index .store {
+	h2 {
+		@include h2;
+		border-bottom: $border-black;
+
+		@media(max-width: 991px) {
+			margin-top: 35px;
+		}
+	}
+
+	.col-md-3 {
+		@media(min-width:460px) and (max-width: 991px) {
+			width: 48%;
+			display: inline-block;
+		}
+
+		@media(max-width: 460px) {
+			margin-top: 20px;
+		}
+
+		img {
+			@media(min-width:460) and (max-width: 556px) {
+				width: 90%;
+			}
+		}
+	}
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+
+	a:hover {
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a.image:hover {
+			opacity: 1;
+		}
+
+	.information {
+		background-color: #000;
+		padding: 8px 0 4px;
+
+		a.bag-name {
+			color: $color-orange;
+			font-size: 16px;
+			margin-left: 18px;
+		}
+
+		.price-add {
+			padding: 0 28px 0 18px;
+			border-top: 1px solid #959595;
+			border-bottom: 1px solid #959595;
+			margin: 2px 0 4px;
+
+			span.price {
+				font-size: 39px;
+			}
+
+			span.add a {
+				color: $color-orange;
+				font-size: 40px;
+				float: right;
+			}
+		}
+
+		p {
+			font-size: 12px;
+			margin: 0 0 0 18px;
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
+
 
 
