@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
       <head>
-            <meta charset="utf-8">
+            <meta charset="utf-8"> 
             <title>Creative Contexts</title>
 
             <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
             <link href="css/default.css" rel="stylesheet" type="text/css" />
+
       </head>
 
       <body class="index">
+
+            <div id="fb-root"></div>
+                  <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }
+                    (document, 'script', 'facebook-jssdk'));
+                  </script>
 
             <div class="container">
                   <div class="row">
@@ -188,7 +200,7 @@
                               </div>
                         </div>
 
-                        <div class="col-md-12 store">
+                        <div class="col-md-12 designers">
                               <h2>DESIGNERS</h2>
                         </div>
 
@@ -202,6 +214,56 @@
                         </div>
                   </div> <!-- row -->
             </div> <!-- container -->
+
+            <footer class="bs-footer">
+                  <div class="container">
+                        <div class="col-md-4">
+                              <h3>browse categories</h3>
+                              <ul class="categories">
+                                    <li><a href="#">Participate</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Login</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                              <h3>context's weekly newsletter</h3>
+                              <p>Get awesome projects delivered to your inbox each week.</p>
+                              <form class="form-inline" role="form">                                   
+                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your e-mail address...">                                   
+                                    <button type="submit" class="btn btn-default">JOIN NEWSLETTER</button>
+                              </form>
+                        </div>
+                        <div class="col-md-4 last-col">
+                              <h3>connect with us</h3>
+                              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+                              <ul class="connecting">
+                                    <li><a href="#"><img src="img/icon-twitter.png" alt="twitter">Follow on Twitter</a></li>
+                                    <li><a href="#"><img src="img/icon-rss.png" alt="rss">Read our Context's Blog</a></li>
+                                    <li><a href="#"><img src="img/icon-fb.png" alt="facebook">Context's on Facebook</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-12 clearfix">
+                              <p>powered by:<img src="img/ied-logo.png" alt="ied"></p>
+                        </div>
+                        <ul class="footer-links">
+                              <li><a href="#">Help</a></li>
+                              <li class="muted">|</li>
+                              <li><a href="#">Guidelines</a></li>
+                              <li class="muted">|</li>
+                              <li><a href="#">Terms of Use</a></li>
+                              <li class="muted">|</li>
+                              <li><a href="#">Privacy Policy</a></li>
+                              <li class="muted">|</li>
+                              <li class="last"><a href="#">Contact</a></li>
+                              <div class="copyright">
+                                    <li><a href="#">Copyright @ 2009-2012 Istituto Europeo di Design</a></li>
+                                    <li class="muted">|</li>
+                                    <li><a href="#">P.Iva: 022942730156</a></li>
+                              </div>
+                        </ul>
+                  </div>
+            </footer>
 
       </body>
 </html>
