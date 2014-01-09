@@ -548,15 +548,19 @@ $background-gray: #999;
 	
 	.carousel-inner img { 
 		display: inline;  
-		width: 12.4%;
+		width: 12.5%;
+		-moz-margin-start: -1px;
+		margin-left: -2px\9;
+	}
 
-		@media(max-width: 499px) {
-			-moz-margin-start: -2px;
-		}
+	.left.carousel-control,
+	.right.carousel-control {
+		background-repeat: no-repeat;
+		filter: none;
 	}
 
 	.carousel-control {
-		width: 5%;
+		width: 10%;
 	}
 	
 	.carousel-control.left,
@@ -565,18 +569,34 @@ $background-gray: #999;
 	}
 
 	.carousel-control.left {
-		left: -55px;
+		left: -80px;
+
+		@media(max-width: 1199px) {
+			left: -75px;
+		}
 
 		@media(max-width: 798px) {
-			left: -10px;
+			left: -35px;
+		}
+
+		@media(max-width: 556px) {
+			left: -20px;
 		}
 	}
 
 	.carousel-control.right {
-		right: -30px;
+		right: -55px;
+
+		@media(max-width: 1199px) {
+			right: -50px;
+		}
 
 		@media(max-width: 798px) {
-			right: 10px;
+			right: -10px;
+		}
+
+		@media(max-width: 556px) {
+			right: 0;
 		}
 	}
 
@@ -587,8 +607,12 @@ $background-gray: #999;
     			z-index: 5;
     			display: inline-block;
 
+    			@media(max-width: 991px) {
+					top: 35%;
+				}
+
     			@media(max-width: 556px) {
-					top: 30%;
+					top: 25%;
 				}
 			
 			img {
