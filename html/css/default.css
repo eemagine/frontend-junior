@@ -10,6 +10,9 @@
   font-family: "TradeGothicLTStd-Bold";
   src: url(../fonts/tradegothicltstd-bold-webfont.ttf); }
 
+body {
+  overflow-x: hidden; }
+
 .nav > li > a:hover {
   background-color: transparent;
   opacity: 0.8; }
@@ -356,6 +359,40 @@
   font-size: 24px;
   color: #000;
   padding-bottom: 10px; }
+.index .designers .carousel-inner .active {
+  display: table; }
+.index .designers .carousel-inner img {
+  display: inline;
+  width: 12.4%; }
+.index .designers .carousel-control {
+  width: 5%; }
+.index .designers .carousel-control.left,
+.index .designers .carousel-control.right {
+  background-image: none; }
+.index .designers .carousel-control.left {
+  left: -55px; }
+  @media (max-width: 798px) {
+    .index .designers .carousel-control.left {
+      left: -10px; } }
+.index .designers .carousel-control.right {
+  right: -30px; }
+  @media (max-width: 798px) {
+    .index .designers .carousel-control.right {
+      right: 10px; } }
+.index .designers .arrow-left,
+.index .designers .arrow-right {
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+  display: inline-block; }
+  @media (max-width: 556px) {
+    .index .designers .arrow-left,
+    .index .designers .arrow-right {
+      top: 30%; } }
+  @media (max-width: 556px) {
+    .index .designers .arrow-left img,
+    .index .designers .arrow-right img {
+      width: 12px; } }
 
 .index .brands h2 {
   font-family: "TradeGothicLTStd-Bold";

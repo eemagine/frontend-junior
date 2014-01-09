@@ -40,6 +40,10 @@ $background-gray: #999;
 	text-transform: uppercase;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 .nav > li > a:hover {
 	background-color: transparent;
 	opacity: 0.8;
@@ -541,6 +545,58 @@ $background-gray: #999;
 	h2 {
 		@include h2;
 	}
+
+	.carousel-inner .active { 
+		display: table; 
+	}
+	
+	.carousel-inner img { 
+		display: inline;  
+		width: 12.4%;
+	}
+
+	.carousel-control {
+		width: 5%;
+	}
+	
+	.carousel-control.left,
+	.carousel-control.right {
+		background-image:none;
+	}
+
+	.carousel-control.left {
+		left: -55px;
+
+		@media(max-width: 798px) {
+			left: -10px;
+		}
+	}
+
+	.carousel-control.right {
+		right: -30px;
+
+		@media(max-width: 798px) {
+			right: 10px;
+		}
+	}
+
+	.arrow-left,
+	.arrow-right {
+			position: absolute;
+    			top: 40%;
+    			z-index: 5;
+    			display: inline-block;
+
+    			@media(max-width: 556px) {
+					top: 30%;
+				}
+			
+			img {
+	    			@media(max-width: 556px) {
+					width: 12px;
+				}
+			}
+		}
 }
 
 .index .brands {
