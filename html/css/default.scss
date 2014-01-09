@@ -40,10 +40,6 @@ $background-gray: #999;
 	text-transform: uppercase;
 }
 
-body {
-	overflow-x: hidden;
-}
-
 .nav > li > a:hover {
 	background-color: transparent;
 	opacity: 0.8;
@@ -270,7 +266,7 @@ body {
 
 		.images {
 			img.img-right {
-			margin-left: 12px;
+				margin-left: 12px;
 			}
 
 			img {
@@ -553,6 +549,10 @@ body {
 	.carousel-inner img { 
 		display: inline;  
 		width: 12.4%;
+
+		@media(max-width: 499px) {
+			-moz-margin-start: -2px;
+		}
 	}
 
 	.carousel-control {

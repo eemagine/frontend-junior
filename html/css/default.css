@@ -10,9 +10,6 @@
   font-family: "TradeGothicLTStd-Bold";
   src: url(../fonts/tradegothicltstd-bold-webfont.ttf); }
 
-body {
-  overflow-x: hidden; }
-
 .nav > li > a:hover {
   background-color: transparent;
   opacity: 0.8; }
@@ -364,6 +361,9 @@ body {
 .index .designers .carousel-inner img {
   display: inline;
   width: 12.4%; }
+  @media (max-width: 499px) {
+    .index .designers .carousel-inner img {
+      -moz-margin-start: -2px; } }
 .index .designers .carousel-control {
   width: 5%; }
 .index .designers .carousel-control.left,
