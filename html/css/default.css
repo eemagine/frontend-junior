@@ -60,13 +60,13 @@ body {
       float: right; }
     .index .header .middle .captions .left {
       float: left; }
-  .index .header .designers {
+  .index .header .designers-number {
     margin-top: 30px;
     border-top: 1px solid #252525;
     width: 100%;
     border-bottom: 2px solid silver;
     line-height: 1.2; }
-  .index .header .designers span {
+  .index .header .designers-number span {
     float: right; }
   .index .header .border {
     border-bottom: 3px solid #555; }

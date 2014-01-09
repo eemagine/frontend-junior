@@ -112,14 +112,14 @@ body {
 		}
 	}
 	
-	 .designers {
+	 .designers-number {
 		@include border-top;
 		width: 100%;
 		border-bottom: $border-gray;
 		line-height: 1.2;
 	}
 
-	.designers span {
+	.designers-number span {
 		float: right;
 	}
 
