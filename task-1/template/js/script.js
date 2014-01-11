@@ -38,7 +38,6 @@ function orDivPosition() {
 		var boxWidth = $('.images').width() * 0.5 - 79;
 	}
 	
-	console.log(boxWidth);
 	$('.orDiv').css({
 		left: boxWidth
 	});
